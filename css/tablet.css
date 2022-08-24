@@ -1,0 +1,108 @@
+/* responsive cho Tablet màn hình lớn   */
+@media (max-width: 1024px) {
+  /* Thông tin cá nhân responsive */
+  .about_target {
+    padding: 80px 32px 48px 48px;
+  }
+
+  /* Chứng chỉ - giải thưởng responsive */
+  #certificate {
+    padding: 36px 0;
+  }
+  .certificate_container {
+    gap: 32px;
+  }
+  .certificate_item_content h4 {
+    margin-bottom: 4px;
+  }
+
+  /* Project responsive*/
+  .project_container {
+    gap: 24px;
+  }
+}
+
+/* responsive cho Tablet màn hình nhỏ    */
+@media (max-width: 768px) {
+  /* banner responsive */
+  #banner {
+    height: 200px;
+  }
+
+  /* Navigation responsive */
+  .navbar_img {
+    display: none;
+  }
+  .navbar_container a {
+    width: 145px;
+  }
+  .navbar_container a:nth-child(even) {
+    border-right: 2px solid #eaeaea;
+  }
+
+  /* Thông tin cá nhân responsive */
+  .about_target {
+    padding: 64px 32px 48px 48px;
+  }
+  .about_personal {
+    padding: 64px 0 48px 48px;
+  }
+
+  /* Thông tin nghề nghiệp responsive */
+  .job_info_item_header {
+    margin-bottom: 12px;
+  }
+  .job_info_item_content {
+    margin-bottom: 16px;
+  }
+
+  /* Chứng chỉ - giải thưởng responsive */
+  .certificate_container {
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+  .certificate_item {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .certificate_item_content {
+    margin-left: 0;
+  }
+  .certificate_item img {
+    width: 100%;
+    height: auto;
+  }
+  .certificate_item_content h4 {
+    margin-bottom: 4px;
+  }
+
+  /* Project responsive */
+  #project {
+    padding: 24px 0;
+  }
+  .project_title {
+    margin-bottom: 24px;
+  }
+  .project_container {
+    gap: 12px;
+  }
+  .project_item {
+    width: auto;
+  }
+  .project_item_title {
+    padding: 8px 8px;
+  }
+  .project_item_title h4 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .project_item_info {
+    justify-content: space-between;
+  }
+  .project_item_info_company,
+  .project_item_info_position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

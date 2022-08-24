@@ -1,0 +1,613 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* 
+    Main color: #199cdb
+    Grey color: #bfbfbf 
+    màu chữ : #333333
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  color: #333333;
+}
+
+.dot {
+  height: 6px;
+  width: 6px;
+  background-color: #199cdb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.highlight {
+  background-color: #199cdb;
+  padding: 2px 12px;
+  border-radius: 100px;
+}
+
+.color--white {
+  color: #fff !important;
+}
+
+.progress_bar--active {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+.progress_bar--inactive {
+  background: #eaeaea;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+/* Banner css */
+#banner {
+  height: 400px;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(../images/banner.jpg);
+  background-size: cover;
+  background-position: top;
+  color: #fff;
+}
+
+.banner_text {
+  text-align: center;
+  padding-top: 70px;
+}
+
+.banner_text h1 {
+  font-size: 36px;
+  margin-bottom: 4px;
+  font-weight: 400;
+}
+
+.banner_text p {
+  color: #8c8c8c;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Navigation */
+#navbar {
+  /* height: 60px; */
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 4px 10px -5px #bfbfbf;
+  position: relative;
+}
+
+.navbar_container {
+  /* height: auto; */
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar_container a {
+  width: 180px;
+  padding: 18px 0;
+  text-decoration: none;
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  /* line-height: 60px; */
+  border-left: 2px solid #eaeaea;
+}
+
+.navbar_container a i {
+  color: #199cdb;
+  margin-right: 2px;
+  font-size: 16px;
+}
+
+.navbar_img {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navbar_img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 8px solid #fff;
+  box-shadow: 0px 0px 5px 1px #bfbfbf;
+}
+
+/* Thông tin cá nhân */
+/* #about {
+} */
+
+.about_title {
+  font-size: 30px;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 32px;
+}
+
+.about_container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about_target {
+  background-color: rgb(245, 245, 245);
+  padding: 80px 48px 48px 350px;
+}
+
+.about_target p {
+  color: #8c8c8c;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.about_personal {
+  background-color: rgb(240, 240, 240);
+  padding: 80px 0 48px 48px;
+}
+
+.about_personal ul {
+  list-style-type: none;
+  margin-bottom: 12px;
+  padding: 0;
+}
+
+.about_personal ul li {
+  color: #8c8c8c;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.about_personal ul li span {
+  color: #333333;
+  font-weight: 500;
+}
+
+.about_personal_social a {
+  text-decoration: none;
+  color: #199cdb;
+  margin-right: 4px;
+}
+
+/* Thông tin nghề nghiệp */
+#job_info {
+  /* width: 1170px; */
+  /* margin: 0 auto; */
+  padding: 48px 0;
+}
+
+/* .job_info_container { */
+/* height: 100%; */
+/* display: grid;
+  grid-template-columns: 1fr; */
+/* gap: 32px; */
+/* align-items: start; */
+/* } */
+
+.job_info_item {
+  border: 2px solid #eaeaea;
+  padding: 12px 24px 12px 24px;
+  margin-bottom: 24px;
+}
+
+.job_info_item_header {
+  display: flex;
+  height: 75px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.job_info_item_header h1 {
+  width: 75%;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.job_info_item_header i {
+  width: 25%;
+  font-size: 36px;
+  color: #8c8c8c;
+  text-align: center;
+}
+
+.job_info_item_content {
+  position: relative;
+  padding: 0 16px 0 32px;
+  margin: 0 0 24px;
+}
+
+.job_info_item_content::before {
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #199cdb;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+}
+
+.job_info_item_content h4 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.job_info_item_content span {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: italic;
+  color: #8c8c8c;
+}
+
+.job_info_item_content ul {
+  list-style-type: none;
+  margin-top: 8px;
+}
+
+.job_info_item_content ul li {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #8c8c8c;
+}
+
+/* Sở thích css  */
+.job_info_item_hobby {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* margin-bottom: 24px; */
+}
+
+.hobby_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.hobby_item p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #8c8c8c;
+}
+
+.hobby_item_icon {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #199cdb;
+  border-radius: 50%;
+}
+
+.hobby_item_icon i {
+  font-size: 20px;
+  color: #199cdb;
+}
+
+/* Ngôn ngữ css  */
+.job_info_item_language {
+  margin-bottom: 12px;
+}
+
+.progress_bar {
+  margin-bottom: 16px;
+}
+
+.progress_bar h4 {
+  margin-bottom: 4px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+/* Kỹ năng css  */
+.job_info_item_skills {
+  margin-bottom: 12px;
+}
+
+/* Chứng chỉ - giải thưởng */
+#certificate {
+  padding: 48px 0;
+}
+
+.certificate_title {
+  font-size: 30px;
+  font-weight: 400;
+  color: #333333;
+  /* width: 1170px; */
+  margin: 0 auto 36px;
+}
+
+.certificate_container {
+  /* width: 1170px; */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  position: relative;
+}
+
+.certificate_container::after {
+  position: absolute;
+  background-color: #d6c08d;
+  content: "";
+  display: block;
+  height: 1px;
+  top: 50%;
+  right: 0;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.certificate_item {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.certificate_item:nth-child(even)::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: -12px;
+  border-left: 1px solid #d6c08d;
+}
+
+/* .certificate_item:nth-child(even)::after {
+  position: absolute;
+  background-color: #d6c08d;
+  content: "";
+  display: block;
+  width: 1170px;
+  height: 1px;
+  bottom: -32px;
+  right: 0;
+} */
+
+.certificate_item img {
+  width: 200px;
+  height: auto;
+}
+
+.certificate_item_content {
+  margin-left: 24px;
+}
+
+.certificate_item_content h4 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.certificate_item_content ul li {
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #8c8c8c;
+}
+
+/* Project */
+#project {
+  padding: 48px 0;
+}
+
+.project_title {
+  font-size: 30px;
+  font-weight: 400;
+  color: #333333;
+  /* width: 1170px; */
+  margin: 0 auto 36px;
+}
+
+.project_container {
+  /* width: 1170px; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.project_item {
+  text-decoration: none;
+  color: #333333;
+  display: block;
+}
+
+.project_item:hover {
+  cursor: pointer;
+  color: #0012de;
+}
+
+.project_item_image img {
+  width: 100%;
+  height: auto;
+}
+
+.project_item_title {
+  padding: 12px 12px;
+  border: 1px solid #eaeaea;
+}
+
+.project_item_title h4 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.project_item_info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 12px;
+  border: 1px solid #eaeaea;
+}
+
+.project_item_info_time {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  /* margin-right: 12px; */
+}
+
+.project_item_info_company {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #8c8c8c;
+  /* margin-right: 12px; */
+}
+
+.project_item_info_position {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #8c8c8c;
+  /* margin-right: 12px; */
+}
+
+.project_item_info_company i,
+.project_item_info_position i {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.project_item_description {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 12px 12px 12px 12px;
+  border: 1px solid #eaeaea;
+}
+
+.project_item_description p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #8c8c8c;
+}
+
+.project_item_duty {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 12px 12px 12px 12px;
+  border-left: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.project_item_duty p,
+.project_item_duty ul li {
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #8c8c8c;
+}
+
+.project_item_technology {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 12px 12px 12px 12px;
+  border-left: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.project_item_technology p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #8c8c8c;
+}
+
+/* Footer css */
+#footer {
+  padding: 48px 0;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.footer_container a {
+  text-decoration: none;
+}
+
+.footer_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_item i {
+  font-size: 36px;
+  line-height: 54px;
+  color: #199cdb;
+  /* margin-right: 8px; */
+}
+
+.footer_item span {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #8c8c8c;
+}

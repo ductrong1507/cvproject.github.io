@@ -1,0 +1,107 @@
+@media (max-width: 576px) {
+  /* Navigation responsive */
+  #navbar {
+    flex-direction: column;
+    /* height: auto; */
+    align-items: flex-start;
+  }
+  .navbar_container {
+    flex-direction: column;
+    padding-left: 32px;
+    width: 100%;
+  }
+  .navbar_container a {
+    width: 100%;
+    border: none;
+    text-align: unset;
+    padding: 8px;
+  }
+  .navbar_container a:nth-child(even) {
+    border: none;
+  }
+
+  /* Thông tin cá nhân */
+  .about_container {
+    grid-template-columns: 1fr;
+  }
+  .about_target {
+    padding: 48px 32px 48px 48px;
+  }
+  .about_personal {
+    padding: 48px 0 48px 48px;
+  }
+  .about_title {
+    margin-bottom: 24px;
+  }
+
+  /* Chứng chỉ - giải thưởng */
+  #certificate {
+    padding: 24px 0;
+  }
+  .certificate_title {
+    margin-bottom: 24px;
+  }
+  .certificate_container {
+    grid-template-columns: 1fr;
+  }
+  .certificate_container::after {
+    display: none;
+  }
+  .certificate_item:nth-child(even)::before {
+    display: none;
+  }
+
+  .certificate_item::after {
+    position: absolute;
+    background-color: #d6c08d;
+    content: "";
+    display: block;
+    height: 1px;
+    bottom: -20px;
+    right: 0;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  .certificate_item:last-child::after {
+    display: none;
+  }
+
+  /* Project */
+  #project {
+    padding: 24px 0;
+  }
+  .project_title {
+    margin-bottom: 24px;
+  }
+  .project_container {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .project_item_title {
+    padding: 12px;
+  }
+  .project_item_title h4 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .project_item_info {
+    justify-content: flex-start;
+    gap: 24px;
+  }
+  .project_item_info_company,
+  .project_item_info_position {
+    flex-direction: row;
+    gap: 4px;
+  }
+
+  .project_item_description,
+  .project_item_duty,
+  .project_item_technology {
+    grid-template-columns: 1fr 4fr;
+  }
+
+  #footer {
+    padding: 24px 0;
+  }
+}
