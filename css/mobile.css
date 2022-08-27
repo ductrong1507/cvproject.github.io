@@ -101,7 +101,14 @@
     grid-template-columns: 1fr 4fr;
   }
 
+   /* Footer  */
   #footer {
     padding: 24px 0;
+  }
+  .footer_container {
+    gap: 24px;
+  }
+  .footer_item span {
+    display: none;
   }
 }
