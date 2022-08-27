@@ -1,1 +1,1 @@
-https://github.com/ductrong1507/cvproject.github.io
+https://ductrong1507.github.io/cvprojectfinal/
